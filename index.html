@@ -8,7 +8,17 @@
 </head>
 <body>
   <h1>My first Web</h1>
+  <h3>counter</h3>
   <button onclick="alert('hello')">click me</button>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic ipsa eligendi ullam laudantium ipsum quos, totam illo. Laborum nisi voluptate magnam dolor blanditiis amet enim cumque corrupti deserunt consectetur.</p>
+  <!-- javascript -->
+  <script>
+    const counter = document.querySelector('h3');
+    const btn = document.querySelector('button');
+    counter.innerHTML = 0;
+    btn.addEventListener('click', () => {
+      counter.innerHTML += 1;
+    })
+  </script>
 </body>
 </html>
